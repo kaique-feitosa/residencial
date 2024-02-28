@@ -1,0 +1,140 @@
+.cabecalho {
+    padding-bottom: 3em;
+}
+
+/* NAVBAR */
+.cabecalho__navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor-principal);
+    color: var(--branco);
+    padding: 1em;
+}
+
+.cabecalho__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo__imagem {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.logo__texto {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.menu {
+    display: none;
+}
+
+.menu__lista {
+    position: absolute;
+    top: 41px;
+    right: 16px;
+    background-color: var(--cor-secundaria);
+    padding: 2em 0.5em 0.5em 0.5em;
+    border-radius: 4px 0 0 4px;
+    text-align: right;
+}
+
+.lista__item {
+    border-bottom: 1px solid var(--branco);
+    padding: 0.5em 0;
+}
+
+.lista__item__botao {
+    margin-top: 0.5em;
+}
+
+.item__link {
+    color: var(--branco);
+}
+
+.item__botao {
+    background-color: var(--cor-principal);
+    color: var(--branco);
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.8em;
+    border: none;
+}
+
+.navbar__container {
+    display: flex;
+}
+
+.navbar__botao {
+    display: none;
+}
+
+.menu__botao, .menu__botao__fechar {
+    background-image: url('../assets/menu.svg');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 2em;
+    height: 2em;
+}
+
+.menu__botao__fechar {
+    display: none;
+}
+
+/* BANNER */
+.banner__imagem {
+    width: 23.4375em;
+    height: 16.25em;
+    margin-top: 3em;
+}
+
+.banner__infos {
+    color: var(--verde-escuro);
+    width: 90vw;
+    padding: 0 0 1em 1.5em;
+}
+
+.infos__titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 2.25rem;
+    font-weight: 700;
+    padding: 1em 0;
+}
+
+.destaque {
+    color: var(--cor-secundaria);
+}
+
+.infos__texto {
+    font-weight: 500;
+    line-height: 25.6px;
+    padding-bottom: 2em;
+}
+
+.infos__botao {
+    background-color: var(--cor-secundaria);
+    color: var(--verde-escuro);
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.75em 0.875em;
+    border-radius: 4px;
+}
+
+/* RODAPE */
+.rodape {
+    background-color: var(--cor-principal);
+    padding: 1.5em 0.5em;
+}
+
+.rodape__texto {
+    color: var(--branco);
+    font-family: var(--fonte-secundaria);
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+}

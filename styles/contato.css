@@ -1,0 +1,90 @@
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 0;
+}
+
+.contato__container {
+    color: var(--verde-escuro);
+}
+
+.contato__titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 0.7em;
+}
+
+.contato__texto {
+    font-weight: 500;
+    line-height: 25.6px;
+    padding: 2em 1.5em;
+}
+
+.contato__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contato__input {
+    background-color: var(--cinza-claro);
+    padding: 0.75em 1.25em;
+    border: 1px solid var(--cinza);
+    width: 80%;
+}
+
+.contato__input::placeholder {
+    color: var(--verde-escuro);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.contato__escolher {
+    background-color: var(--cinza-claro);
+    color: var(--verde-escuro);
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid var(--cinza);
+    padding: 0.75em 1.25em;
+    width: 89%;
+}
+
+.contato__imagem {
+    width: 20.4375em;
+    height: 25em;
+}
+
+.contato__botao {
+    background-color: var(--cor-secundaria);
+    color: var(--branco);
+    padding: 0.75em 1.5em;
+    width: 89%;
+}
+
+.contato__icones {
+    padding: 2em 1.5em;
+}
+
+.icone__telefone, .icone__email {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0.5em 0;
+}
+
+.conteudo__nome {
+    color: var(--verde-escuro);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.conteudo__exemplo {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-secundaria);
+    font-size: 0.8125rem;
+    font-weight: 400;
+}

@@ -1,0 +1,44 @@
+.sobre-nos__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-principal);
+    color: var(--branco-fumaca);
+    padding-top: 4em;
+}
+
+.sobre-nos__conteudo {
+    width: 90%;
+}
+
+.sobre-nos__botao {
+    background-color: var(--cor-secundaria);
+    color: var(--verde-escuro);
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.5em 0.75em;
+    border-radius: 4px;
+}
+
+.sobre-nos__titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 35.2px;
+    padding: 1em 0;
+}
+
+.sobre-nos__texto {
+    font-weight: 500;
+    line-height: 25.6px;
+}
+
+.texto-2 {
+    padding: 1.5em 0;
+}
+
+.sobre-nos__imagem {
+    width: 21.9375em;
+    height: 18.75em;
+    padding: 1em 0 3em 0;
+}

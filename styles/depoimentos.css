@@ -1,0 +1,69 @@
+.depoimentos {
+    background-color: var(--cor-principal);
+    color: var(--branco);
+    padding: 5em 0;
+}
+
+.depoimentos__titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 1em;
+}
+
+.depoimentos__texto {
+    line-height: 25.6px;
+    padding: 2em 2em 4em 2em;
+}
+
+.depoimentos__botoes {
+    display: none;
+}
+
+.depoimentos__container {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 2em;
+    justify-content: center;
+}
+
+.pessoa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cinza-claro);
+    color: var(--cor-principal);
+    text-align: center;
+    border: 1px solid var(--cinza);
+    border-radius: 4px;
+    width: 20.4375em;
+    height: 20.875em;
+}
+
+.pessoa__texto {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 21px;
+    width: 80%;
+}
+
+.pessoa__imagem {
+    width: 7.5em;
+    height: 1.25em;
+    padding: 1em 0;
+}
+
+.pessoa__nome {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25em;
+    font-weight: 500;
+    padding-top: .5em;
+}
+
+.pessoa__relacao {
+    color: var(--verde-transparente);
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding-top: .5em;
+}

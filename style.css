@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat&family=Space+Grotesk:wght@500&display=swap');
+@import url('./styles/cabecalho-rodape.css');
+@import url('./styles/sobre-nos.css');
+@import url('./styles/espaco.css');
+@import url('./styles/spoiler.css');
+@import url('./styles/depoimentos.css');
+@import url('./styles/contato.css');
+
+:root {
+    --fonte-principal: "Inter", sans-serif;
+    --fonte-secundaria: "Space Grotesk", sans-serif;
+
+    --cor-principal: #0E3E29;
+    --cor-secundaria: #FF7E1E;
+    --verde-escuro: #052014;
+    --verde-transparente:#052014B8;
+    --cinza: #EAEAEA;
+    --branco-fumaca: #F5F5F5;
+    --cinza-claro: #F7F7F7;
+    --branco: #FFFFFF;
+}
+
+* {
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--branco);
+    font-family: var(--fonte-principal);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+
+.menu-active {
+    display: block;
+}
+
+.menu-hide {
+    display: none;
+}
