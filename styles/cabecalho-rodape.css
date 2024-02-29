@@ -82,10 +82,6 @@
     height: 2em;
 }
 
-.menu__botao__fechar {
-    display: none;
-}
-
 /* BANNER */
 .banner__imagem {
     width: 23.4375em;
@@ -137,4 +133,50 @@
     font-size: 0.875rem;
     font-weight: 500;
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    /* NAVBAR */
+    .cabecalho__navbar {
+        padding: 1.5em;
+    }
+
+    .navbar__container {
+        display: none;
+    }
+
+    .navbar__botao {
+        display: block;
+        background-color: var(--cor-secundaria);
+        color: var(--verde-escuro);
+        font-size: 0.875rem;
+        font-weight: 600;
+        border-radius: 4px;
+        padding: 0.8em;
+        border: none;
+    }
+
+    /* BANNER */
+    .cabecalho__banner {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .infos__titulo {
+        font-size: 3rem;
+        line-height: 52.8px;
+        padding: 1.5em 0 0.5em 0;
+        width: 60%;
+    }
+
+    .infos__texto {
+        font-size: 1.25rem;
+        line-height: 32px;
+        width: 75%;
+    }
+
+    .banner__imagem {
+        width: auto;
+        height: auto;
+    }
 }
