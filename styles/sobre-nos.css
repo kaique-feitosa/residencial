@@ -64,3 +64,35 @@
     }
 
 }
+
+@media screen and (min-width: 1920px){
+    .sobre-nos__container {
+        flex-direction: row;
+        padding-top: 0;
+    }
+
+    .sobre-nos__imagem {
+        padding: 0;
+    }
+
+    .sobre-nos__conteudo {
+        margin: 0 3em 0 16em;
+        width: 39%;
+    }
+
+    .sobre-nos__botao {
+        font-size: 1rem;
+        padding: 0.5em 1em;
+    }
+
+    .sobre-nos__titulo {
+        font-size: 3rem;
+        line-height: 52.8px;
+    }
+
+    .sobre-nos__texto {
+        font-size: 1.125rem;
+        line-height: 28.8px;
+        margin-right: 8em;
+    }
+}

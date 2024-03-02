@@ -6,6 +6,7 @@
 .cabecalho__navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--cor-principal);
     color: var(--branco);
     padding: 1em;
@@ -23,8 +24,13 @@
 }
 
 .logo__texto {
+    font-family: var(--fonte-secundaria);
     font-size: 1.125rem;
     font-weight: 500;
+}
+
+.navbar__opcoes {
+    display: none;
 }
 
 .menu {
@@ -72,7 +78,7 @@
     display: none;
 }
 
-.menu__botao, .menu__botao__fechar {
+.menu__botao {
     background-image: url('../assets/menu.svg');
     background-color: transparent;
     background-repeat: no-repeat;
@@ -98,12 +104,14 @@
 .infos__titulo {
     font-family: var(--fonte-secundaria);
     font-size: 2.25rem;
-    font-weight: 700;
+    font-weight: 500;
     padding: 1em 0;
 }
 
 .destaque {
     color: var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
 }
 
 .infos__texto {
@@ -124,7 +132,7 @@
 /* RODAPE */
 .rodape {
     background-color: var(--cor-principal);
-    padding: 1.5em 0.5em;
+    padding: 1.5em 0;
 }
 
 .rodape__texto {
@@ -182,5 +190,77 @@
     .banner__imagem {
         width: auto;
         height: auto;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    /* CABEÇALHO */
+    .cabecalho__navbar {
+        justify-content: center;
+    }
+
+    .logo__imagem {
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .logo__texto {
+        font-size: 1.5rem;
+    }
+
+    .navbar__opcoes {
+        display: flex;
+        gap: 40px;
+        margin: 0 3em 0 20em;
+    }
+
+    .opcao__link {
+        color: var(--branco);
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+
+    .navbar__botao {
+        font-size: 1rem;
+        padding: 1em 1.5em;
+    }
+
+    /* BANNER */
+    .cabecalho__banner {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .banner__imagem {
+        width: 53.75em;
+        height: 33.4375em;
+    }
+
+    .banner__infos {
+        margin-left: 11em;
+    }
+
+    .infos__titulo {
+        font-size: 3.5rem;
+        line-height: 61.6px;
+    }
+
+    .infos__texto {
+        font-size: 1.25rem;
+        line-height: 32px;
+    }
+
+    .infos__botao {
+        font-size: 1rem;
+        padding: 1em 1.5em;
+    }
+
+    /* RODAPÉ */
+    .rodape {
+        padding: 2em 0;
+    }
+
+    .rodape__texto {
+        font-size: 1.25rem;
     }
 }
