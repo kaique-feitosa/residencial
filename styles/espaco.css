@@ -20,7 +20,7 @@
 }
 
 .espaco__titulo {
-    font-family: var(--fonte-secundario);
+    font-family: var(--fonte-secundaria);
     font-size: 2rem;
     font-weight: 500;
     line-height: 35.2px;
@@ -28,9 +28,8 @@
 }
 
 .espaco__cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
     gap: 24px;
 }
 
@@ -42,6 +41,7 @@
     gap: 32px;
     background-color: var(--cinza-claro);
     border: 1px solid var(--cinza);
+    border-radius: 5px;
     width: 20.4375em;
     height: 17.3125em;
 }
@@ -57,4 +57,24 @@
     font-weight: 500;
     line-height: 28.8px;
     width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+    .espaco__subtitulo {
+        font-size: 1.125rem;
+    }
+
+    .espaco__titulo {
+        font-size: 2.5rem;
+        line-height: 44px;
+    }
+
+    .espaco__cards {
+        grid-template-rows: none;
+        grid-template-columns: repeat(4, auto);
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 90%;
+    }    
+
 }

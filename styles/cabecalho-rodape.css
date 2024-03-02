@@ -162,6 +162,10 @@
         flex-direction: column-reverse;
     }
 
+    .banner__imagem {
+        margin-top: 4em;
+    }
+
     .infos__titulo {
         font-size: 3rem;
         line-height: 52.8px;

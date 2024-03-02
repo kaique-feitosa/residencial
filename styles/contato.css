@@ -38,6 +38,7 @@
 
 .contato__input::placeholder {
     color: var(--verde-escuro);
+    font-family: var(--fonte-principal);
     font-size: 0.875rem;
     font-weight: 500;
 }
@@ -45,6 +46,7 @@
 .contato__escolher {
     background-color: var(--cinza-claro);
     color: var(--verde-escuro);
+    font-family: var(--fonte-principal);
     font-size: 0.875rem;
     font-weight: 500;
     border: 1px solid var(--cinza);
@@ -52,14 +54,23 @@
     width: 89%;
 }
 
-.contato__imagem {
+.contato__escolher option {
+    color: var(--verde-escuro);
+    font-family: var(--fonte-principal);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* .contato__imagem {
     width: 20.4375em;
     height: 25em;
-}
+} */
 
 .contato__botao {
     background-color: var(--cor-secundaria);
     color: var(--branco);
+    font-weight: 600;
+    text-transform: uppercase;
     padding: 0.75em 1.5em;
     width: 89%;
 }
@@ -87,4 +98,44 @@
     color: var(--cor-secundaria);
     font-size: 0.8125rem;
     font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    .contato {
+        padding-top: 7em;
+    }
+
+    .contato__titulo {
+        font-size: 2.5rem;
+    }
+
+    .contato__texto {
+        padding: 2em;
+        width: 60%;
+    }
+
+    .contato__input {
+        padding: 1.5em;
+        width: 85%;
+    }
+
+    .contato__escolher {
+        padding: 1.5em;
+        width: 90%;
+    }
+
+    .contato__botao {
+        padding: 1.5em 0;
+        width: 90%;
+    }
+
+    .contato__icones {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .conteudo__nome {
+        padding-bottom: 0.5em;
+        font-size: 0.875rem;
+    }
 }

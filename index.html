@@ -12,7 +12,7 @@
     <header class="cabecalho">
         <div class="cabecalho__navbar">
             <div class="cabecalho__logo">
-                <img src="assets/icone-casa.svg" alt="Logo do residencial" class="logo__imagem">
+                <img src="./assets/icone-casa.svg" alt="Logo do residencial" class="logo__imagem">
                 <p class="logo__texto">Residencial</p>
             </div>
             <div class="navbar__container">
@@ -60,7 +60,11 @@
             <p class="sobre-nos__texto texto-1">No Residencial você realiza o sonho de morar em São Paulo, na segurança e conforto de um condomínio fechado, com lazer completo. Detalhes cuidadosamente projetados para trazer conforto e funcionalidade.</p>
             <p class="sobre-nos__texto texto-2">Clube com piscina, guarita de segurança, áreas de lazer equipadas e decoradas. Além de todas as vantagens do RESIDENCIAL, você ainda pode contar com os benefícios de Viver Bem.</p>
         </div>
-        <img src="assets/piscina.svg" alt="Foto da piscina da área de lazer do residencial" class="sobre-nos__imagem">
+        <picture>
+            <source srcset="./assets/piscina-desktop.svg" media="(min-width: 1440px)">
+            <source srcset="./assets/piscina-tablet.svg" media="(min-width: 768px)">
+            <img src="./assets/piscina-mobile.svg" alt="Foto da piscina da área de lazer do residencial" class="sobre-nos__imagem">
+        </picture>
     </section>
 
     <section class="espaco__container">
@@ -139,9 +143,9 @@
             <h2 class="contato__titulo">Entrar em contato</h2>
             <p class="contato__texto">Caso você tenha alguma dúvida, sugestão, feedback ou queira fazer uma oferta conosco, essa é a seção adequada para fazê-lo.</p>
             <form action="" class="contato__form">
-                <input type="text" name="nome" id="nome" placeholder="Nome" class="contato__input">
-                <input type="email" name="email" id="email" placeholder="E-mail" class="contato__input">
-                <input type="tel" name="telefone" id="telefone" placeholder="Telefone" class="contato__input">
+                <input type="text" name="nome" id="nome" placeholder="Nome" class="contato__input" autocomplete="name">
+                <input type="email" name="email" id="email" placeholder="E-mail" class="contato__input" autocomplete="email">
+                <input type="tel" name="telefone" id="telefone" placeholder="Telefone" class="contato__input" autocomplete="tel">
                 <select name="escolher" id="escolher" class="contato__escolher">
                     <option value="escolher" selected disabled>Qual o assunto do contato?</option>
                     <option value="escolher">Opção 1</option>
@@ -167,7 +171,11 @@
                 </div>
             </div>
         </div>
-        <img src="assets/mapa.svg" alt="" class="contato__imagem">
+        <picture>
+            <source media="(min-width: 1440px)" srcset="./assets/mapa-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./assets/mapa-tablet.svg">
+            <img src="./assets/mapa-mobile.svg" alt="">
+        </picture>
     </section>
 
     <footer class="rodape">

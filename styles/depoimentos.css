@@ -67,3 +67,24 @@
     font-weight: 500;
     padding-top: .5em;
 }
+
+@media screen and (min-width: 768px) {
+    .depoimentos__titulo {
+        font-size: 2.5rem;
+    }
+
+    .depoimentos__texto {
+        width: 57%;
+    }
+
+    .depoimentos__container {
+        grid-template-rows: none;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: normal;
+        gap: 32px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 95%;
+        margin: 0 auto;
+    }
+}

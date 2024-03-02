@@ -35,3 +35,19 @@
     overflow-y: hidden;
     width: 90%;
 }
+
+.spoiler__imagem {
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    .spoiler__subtitulo {
+        font-size: 1.125rem;
+    }
+
+    .spoiler__titulo {
+        font-size: 2.5rem;
+        line-height: 44px;
+    }
+
+}
