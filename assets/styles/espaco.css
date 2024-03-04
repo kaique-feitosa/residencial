@@ -59,6 +59,10 @@
     width: 80%;
 }
 
+.espaco__botao {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
     .espaco__subtitulo {
         font-size: 1.125rem;
@@ -70,11 +74,36 @@
     }
 
     .espaco__cards {
-        grid-template-rows: none;
+        grid-template-rows: 1fr;
         grid-template-columns: repeat(4, auto);
         overflow-x: scroll;
         overflow-y: hidden;
         width: 90%;
+        justify-content: center;
     }    
 
+}
+
+@media screen and (min-width: 1920px) {
+    .espaco__botao {
+        display: block;
+        background: none;
+    }
+
+    .espaco__esquerda {
+        position: absolute;
+        top: 40%;
+        left: 12%;
+    }
+
+    .espaco__direita {
+        position: absolute;
+        top: 40%;
+        right: 12%;
+    }
+
+    .espaco__cards {
+        position: relative;
+        width: 100%;
+    }
 }

@@ -30,6 +30,7 @@
 .spoiler__galeria {
     display: grid;
     grid-template-columns: repeat(4, auto);
+    grid-template-rows: 1fr;
     column-gap: 32px;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -40,6 +41,10 @@
     border-radius: 4px;
 }
 
+.spoiler__botao {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
     .spoiler__subtitulo {
         font-size: 1.125rem;
@@ -48,6 +53,35 @@
     .spoiler__titulo {
         font-size: 2.5rem;
         line-height: 44px;
+    }
+
+    .spoiler__galeria {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+    .spoiler__galeria {
+        position: relative;
+        width: 100%;
+    }
+
+    .spoiler__botao {
+        display: block;
+        background: none;
+    }
+
+    .spoiler__esquerda {
+        position: absolute;
+        top: 39%;
+        left: 16.5%;
+    }
+
+    .spoiler__direita {
+        position: absolute;
+        top: 39%;
+        right: 16.5%;
     }
 
 }

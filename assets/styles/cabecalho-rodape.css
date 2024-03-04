@@ -221,8 +221,9 @@
     }
 
     .navbar__botao {
+        text-align: center;
         font-size: 1rem;
-        padding: 1em 1.5em;
+        padding: 1em;
     }
 
     /* BANNER */
