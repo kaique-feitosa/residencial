@@ -5,6 +5,7 @@
 @import url('./assets/styles/spoiler.css');
 @import url('./assets/styles/depoimentos.css');
 @import url('./assets/styles/contato.css');
+@import url('./assets/styles/hover.css');
 
 :root {
     --fonte-principal: "Inter", sans-serif;

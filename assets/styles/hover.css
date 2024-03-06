@@ -1,0 +1,37 @@
+@media screen and (min-width: 1024px) {
+    .navbar__botao:hover {
+        transform: scale(1.05);
+        transition: .3s;
+    }
+
+    .infos__botao:hover {
+        opacity: 0.9;
+        transition: 0.3s;
+    }
+
+    .sobre-nos__botao:hover {
+        opacity: 0.9;
+    }
+
+    .pessoa:hover {
+        cursor: pointer;
+        transform: scale(1.025);
+        transition: .4s;
+    }
+
+    .contato__botao:hover {
+        cursor: pointer;
+        opacity: 0.9;
+        transition: 0.3s;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .opcao__link:hover {
+        color: var(--cor-secundaria);
+    }
+
+    .espaco__botao:hover {
+        cursor: pointer;
+    }
+}
